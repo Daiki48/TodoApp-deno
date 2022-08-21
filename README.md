@@ -51,6 +51,8 @@ localhost:8080/todos/
 $ curl -X POST -H 'Content-Type: application/json' -d '{"title": "TodoApp with deno", "content": "first posting"}' 'localhost:8080/todos/'
 ```
 
+---
+
 ### Read(GET)
 
 ```
@@ -65,6 +67,8 @@ ID can be specified.
 $ curl -X GET 'localhost:8080/todos/{:id}/'
 ```
 
+---
+
 ### Update(PUT)
 
 Only `isDone` can be updated. (false -> true)
@@ -73,11 +77,15 @@ Only `isDone` can be updated. (false -> true)
 $ curl -X PATCH 'localhost:8080/todos/{:id}/'
 ```
 
+---
+
 ### Delete(DELETE)
 
 ```
 $ curl -X DELETE 'localhost:8080/todos/{:id}/'
 ```
+
+---
 
 ## Lock file is create
 
